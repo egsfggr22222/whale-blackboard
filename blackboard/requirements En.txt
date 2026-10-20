@@ -1,0 +1,14 @@
+# blackboard — third-party dependencies
+# Tested on Python 3.10
+#
+# Everything except pywebview is standard library (ctypes / http.server / json / threading ...).
+
+# Window + embedded page (WebView2 backend on Windows, GTK / WKWebView on Linux/macOS)
+pywebview>=6.0
+
+# pytools client library (already in the dsh-python-tools directory locally, no pip install needed)
+# pytools_client  — provided by the plugin via PYTHONPATH
+
+# --- Optional ---
+# On Windows, pywebview's WebView2 backend depends on pythonnet
+# pythonnet>=3.0
